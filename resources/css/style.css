@@ -87,6 +87,10 @@ header p {
   text-decoration: none;
 }
 
+#navigation .mobile-nav {
+  display: none;
+}
+
 /* Products Section */
 .products {
   display: flex;
@@ -137,10 +141,86 @@ header p {
   color: white;
 }
 
-
 /* Footer Section */
 footer {
   background-color: black;
   color: white;
   padding: 2.5rem 0;
+}
+
+/* Responsive CSS */
+
+/* Tablet Size */
+@media only screen and (max-width: 1024px) {
+  #navigation .container {
+    display: none;
+  }
+
+  #navigation .mobile-nav {
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  .product {
+    width: 47%;
+  }
+
+  .product.glasses {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .container {
+    width: 100%;
+    justify-content: center;
+  }
+
+  #banner {
+    height: 15rem;
+  }
+
+  #blackbox {
+    width: 100%;
+    top: 10rem;
+    padding: 1rem 2rem;
+  }
+
+  #blackbox h4 {
+    font-size: 0.77rem;
+    padding-bottom: 0.15rem;
+  }
+
+  #blackbox h2 {
+    font-size: 1rem;
+  }
+
+  .products {
+    justify-content: center;
+  }
+
+  .product {
+    width: 90%;
+  }
+
+  .product.watch {
+    display: none;
+  }
+
+  .information {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    }
+
+  .infobox {
+    width: 90%;
+    padding-bottom: 0.5rem;
+  }
+
+  footer {
+    text-align: center;
+  }
+
 }
